@@ -1,0 +1,340 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 300;  
+}
+p {
+    margin: 0 0 20px;  
+}
+a {
+    color: #61dafb;
+    text-decoration: none;   
+}
+a:hover {
+    color: #21a1f1;
+}
+header {
+    padding: 20px ;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(133, 67, 90, 0.3);
+    display: flex;
+}
+header .logo {
+    padding-left: 20px;
+    width: 90px;
+    margin-left: 20px;
+    height: 46px;
+    background-image: url(logo.png);
+    background-size: contain;
+}
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+header  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left : 280px ;  
+}
+header  nav ul li a {
+    font-size: 1.5em;
+    padding: 5px  23px ;
+    transition: background 0.3s;
+    color: white;
+}
+header nav ul li a:hover {
+    background-color: #21a1f1;
+    color : whitesmoke ;
+    border-radius: 5px;
+}
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.intro-text {
+    max-width: 43%;
+    color: #fff;
+}
+.intro-text h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.intro-text span {
+    color: #61dafb;
+    font-weight: bold;
+}
+.intro-text p {
+    color: #ddd;
+    margin: 20px 0 30px;
+    font-size: 1.2em;
+}
+.intro-text .btn {
+    background-color: #61dafb;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background 0.3s;
+}
+.intro-text .btn:hover {
+    background-color: #21a1f1;
+}
+.intro-image {
+    max-width: 40%;
+    padding: 20px;
+}
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-section {
+    padding: 60px 20px;
+    height: 800px;
+    
+}
+.about-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-section p {
+    font-size: 1.7em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.experience-section {
+    padding: 60px 20px;
+    background-color: black;
+    color: white;
+}
+.experience-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #61dafb;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    padding: 20px;
+    background-color: #C80036;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
+    text-align: left;
+}
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #D1D8C5;
+}
+.timeline-item span {
+    font-size: 1em;
+    color: #F4CE14;
+}
+.timeline-item p {
+    font-size: 1em;
+    color: black;
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+.timeline-item:nth-child(even) {
+    left: 55%;
+}
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: #fff;
+    border: 4px solid #61dafb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-item:nth-child(even)::after {
+    left: -12.5px;
+}
+
+.projects-section {
+    height: 1400px;
+    padding: 60px 20px;
+    
+}
+.projects-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.project1 {
+    height: 780px;
+    width: 925px;
+    align-items: center;
+    margin-left: 185px;
+}
+.project2 {
+    height: 395px;
+    width: 450px;
+    margin-left: 185px;
+}
+.project3 {
+    height: 395px;
+    width: 450px;
+    margin-right: 185px;
+}
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.project-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact-section {
+    padding: 60px 20px;
+}
+.contact-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+#contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+#contact-form button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact-form button:hover {
+    background-color: #21a1f1;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+    }
+    header nav ul.active {
+        display: flex;
+    }
+    .intro-text {
+        max-width: 100%;
+    }
+    .intro-image {
+        display: none;
+    }
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 0;
+    }
+    .projects-grid {
+        flex-direction: column;
+    }
+    .project {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 2em;
+    }
+}
+.intro-text .btn {
+        padding: 40px ; }

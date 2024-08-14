@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="portfilio.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <div class="intro-text">
+                <h1>Hello, I'm <span>Mobeen Khan</span></h1>
+                <p>A passionate <span>Frontend developer</span> with expertise in HTML ,CSS And JavaScript</p> <br> <br>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="intro-image">
+                <img src="mobeen.jfif" alt="Mobeen Khan">
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>I am a passionate Frontend Developer with a strong background in creating responsive and visually 
+            websites. I specialize in crafting intuitive user interfaces that enhance user experience. With 
+            a keen eye for design and a commitment to clean code, I strive to bridge the gap between 
+            aesthetics and functionality. My expertise includes HTML, CSS, JavaScript, and modern frontend
+            frameworks, enabling me to deliver high-quality digital solutions.</p>
+        </section>
+        <section id="experience" class="experience-section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Web Developer</h3>
+                    <span>Prodigy Info | 01 July</span>
+                    <p>Developed ensuring seamless user experiences across all devices by leveraging modern HTML, 
+                        CSS, and JavaScript.</p>
+                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Full Stack Developer</h3>
+                    <span>ITSOLERA | 01 april</span>
+                    <p>Designed and implemented end-to-end web solutions, managing both frontend and backend development</p>
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project1 project">
+                    <img src="art.jpeg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Art Gallery</h3>
+                        <p>Developed an interactive online art gallery showcasing curated artwork with a sleek, user-friendly interface, allowing users to explore various pieces effortlessly</p>
+                    </div>
+                </div>
+                <div class="project2 project">
+                    <img src="cal.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Basic Calculator</h3>
+                        <p>Built a functional web-based calculator performing basic arithmetic operations with a clean design and intuitive user interface</p>
+                    </div>
+                </div>
+                <div class="project3 project">
+                    <img src="muuni.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>My University</h3>
+                        <p>Designed and developed ,university website frontend using HTML and CSS, ensuring easy navigation and access to essential information for students and staff</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <footer>
+                <p>&copy; 2024 Mobeen Khan. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
+</body>
+<script defer src="portfolio.js"></script>
+</html>
